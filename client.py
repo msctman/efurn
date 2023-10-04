@@ -11,7 +11,7 @@ def initialize_connection():
     # This function initializes the connection to the Cassandra cluster and sets the global session variable.
     global session  # Declare session as global so it can be accessed and modified within this function
     cloud_config = {
-        'secure_connect_bundle': './secure-connect-furnituredb.zip'
+        'secure_connect_bundle': './secure-connect-db-efurn.zip'
     }
 
     # Load credentials from JSON file
