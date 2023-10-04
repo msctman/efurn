@@ -24,7 +24,7 @@ def initialize_connection():
     # Setting up the authentication provider and Cassandra cluster connection
     auth_provider = PlainTextAuthProvider(CLIENT_ID, CLIENT_SECRET)
     cluster = Cluster(cloud=cloud_config, auth_provider=auth_provider)
-    session = cluster.connect('furniture_keyspace')  # Connect to your keyspace
+    session = cluster.connect('keyspace_efurn')  # Connect to your keyspace
     return cluster  # Return the cluster connection object for later use
 
 def add_customer():
